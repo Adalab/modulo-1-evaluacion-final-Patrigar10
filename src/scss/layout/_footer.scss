@@ -1,0 +1,28 @@
+@use '../core/variables' as vars;
+
+.footer {
+    background-color: vars.$grey-color;
+    color: vars.$white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: vars.$main-font;
+    font-weight: 400;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    &__copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-block: 40px;
+    }
+
+}

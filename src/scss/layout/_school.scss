@@ -1,0 +1,23 @@
+@use '../core/variables' as vars;
+
+.school {
+    background-color: vars.$light-green;
+
+
+
+
+
+    &__arrow {
+        background-color: white;
+        width: fit-content;
+        border-radius: 50%;
+        padding-block: 9px;
+        padding-inline: 12px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -22px;
+
+    }
+
+}
