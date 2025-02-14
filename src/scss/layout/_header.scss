@@ -1,0 +1,33 @@
+@use '../core/variables' as vars;
+
+.header {
+    height: 100vh;
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    background-position: 85% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu {
+    background-color: vars.$main-green;
+    width: 50px;
+    padding: 15px;
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.hero {
+    color: vars.$white;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-inline: 25px;
+
+    &__title {
+        font-size: 2.5rem;
+    }
+
+}
