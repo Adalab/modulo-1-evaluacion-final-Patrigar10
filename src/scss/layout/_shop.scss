@@ -1,0 +1,40 @@
+@use '../core/variables' as vars;
+
+.shop {
+    padding: 15px;
+
+    &__subtitle {
+        color: vars.$main-green;
+        font-family: vars.$main-font;
+        font-weight: 400;
+        font-size: 0.9rem;
+        margin-top: 25px;
+    }
+
+    &__title {
+        font-family: vars.$title-font ;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    &__text {
+        color: vars.$grey-color;
+        font-family: vars.$main-font;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    &__link {
+        color: vars.$main-green;
+        font-family: vars.$main-font;
+        font-weight: 500;
+        font-size: 1.25rem;
+        border: 2px solid vars.$main-green;
+        border-radius: 40px;
+        padding-block: 8px;
+        padding-inline: 40px;
+    }
+}
