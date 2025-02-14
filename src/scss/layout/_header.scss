@@ -12,8 +12,8 @@
 
 .menu {
     background-color: vars.$main-green;
-    width: 50px;
-    padding: 15px;
+    width: 45px;
+    padding: 12px;
 
     &__img {
         width: 100%;
@@ -23,11 +23,29 @@
 .hero {
     color: vars.$white;
     text-align: center;
-    padding-bottom: 100px;
-    padding-inline: 25px;
+    padding-bottom: 60px;
+    padding-inline: 40px;
 
     &__title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        font-family: vars.$title-font;
+        font-weight: bold;
+        line-height: 3.5rem;
     }
+
+    &__text {
+        font-size: 1.2rem;
+        font-family: vars.$main-font;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        background-color: vars.$white;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
 
 }
