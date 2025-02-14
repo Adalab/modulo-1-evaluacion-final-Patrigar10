@@ -7,13 +7,16 @@
     background-position: 85% 15%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 .menu {
     background-color: vars.$main-green;
     width: 45px;
     padding: 12px;
+    position: fixed;
+    left: 0;
+    top: 0;
 
     &__img {
         width: 100%;
@@ -25,6 +28,8 @@
     text-align: center;
     padding-bottom: 60px;
     padding-inline: 40px;
+
+
 
     &__title {
         font-size: 2rem;
