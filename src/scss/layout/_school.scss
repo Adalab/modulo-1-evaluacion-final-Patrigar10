@@ -2,9 +2,42 @@
 
 .school {
     background-color: vars.$light-green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 1200px 100px;
 
+    &__subtitle {
+        font-family: vars.$title-font;
+        font-weight: bold;
+        color: vars.$grey-color;
+        font-size: 0.8rem;
+        grid-column: 1 / 4;
 
+    }
 
+    &__title {
+        font-family: vars.$title-font;
+        font-weight: bold;
+        font-size: 0.9rem;
+        grid-column: 1 / 4;
+        border: blue 1px solid;
+    }
+
+    &__container {
+        // grid-row: 3 / 4;
+        border: red 1px solid;
+        padding: 30px;
+    }
+
+    &__link {
+        background-color: vars.$main-green;
+        border-radius: 30px;
+        color: vars.$white;
+        font-family: vars.$main-font;
+        font-weight: 500;
+        padding: 15px;
+
+    }
 
 
     &__arrow {
