@@ -1,17 +1,17 @@
 @use '../core/variables' as vars;
 
 .article {
-    display: grid;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: 30px;
 
 
-    &__container {
+    &__imgbox {
         border-radius: 50%;
         overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.555);
+        box-shadow: 0 10px 8px rgba(97, 95, 95, 0.568);
 
 
         &__image {
