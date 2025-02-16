@@ -1,14 +1,5 @@
 @use '../core/variables' as vars;
 
-.header {
-    height: 100vh;
-    background-image: url(../images/cover.jpeg);
-    background-size: cover;
-    background-position: 85% 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
 
 .menu {
     background-color: vars.$main-green;
@@ -24,32 +15,78 @@
 }
 
 .hero {
-    color: vars.$white;
-    text-align: center;
-    padding-bottom: 76px;
-    padding-inline: 40px;
+    height: 100vh;
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    background-position: 85% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    &__box {
+        color: vars.$white;
+        text-align: center;
+        padding-bottom: 76px;
+        padding-inline: 40px;
+
+
+        &__title {
+            font-size: 2rem;
+            font-family: vars.$title-font;
+            font-weight: bold;
+            line-height: 3.5rem;
+        }
+
+        &__text {
+            font-size: 1.2rem;
+            font-family: vars.$main-font;
+            font-weight: 400;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        &__link {
+            background-color: vars.$white;
+            border-radius: 50%;
+            padding: 10px;
+        }
+    }
+}
 
 
 
-    &__title {
-        font-size: 2rem;
-        font-family: vars.$title-font;
-        font-weight: bold;
-        line-height: 3.5rem;
+
+@media (min-width: 768px) {
+    .hero {
+        background-position: 65% 35%;
+
+        &__box {
+            &__title {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+
+            &__text {
+                font-size: 1.8rem;
+                margin-inline: 24%;
+            }
+
+        }
     }
 
-    &__text {
-        font-size: 1.2rem;
-        font-family: vars.$main-font;
-        font-weight: 400;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
 
-    &__link {
-        background-color: vars.$white;
-        border-radius: 50%;
-        padding: 10px;
+}
+
+@media (min-width: 1100px) {
+    .hero {
+
+        &__box {
+
+            &__text {
+                margin-inline: 0;
+            }
+
+        }
     }
 
 
