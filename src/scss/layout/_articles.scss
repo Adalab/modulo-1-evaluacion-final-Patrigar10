@@ -27,3 +27,13 @@
 
 
 }
+
+@media (min-width: 768px) {
+    .article {
+
+        &__imgbox {
+            max-width: 304px;
+        }
+    }
+
+}

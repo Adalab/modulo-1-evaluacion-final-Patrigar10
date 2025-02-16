@@ -67,3 +67,26 @@
     }
 
 }
+
+
+@media (min-width: 768px) {
+
+    .school__articlesbox {
+        grid-column: 1 / 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10%;
+        padding-block: 1%;
+        padding-inline: 15%;
+        text-align: center;
+
+
+
+    }
+}
+
+@media (min-width: 1064px) {
+
+    .school__articlesbox {}
+}
