@@ -33,6 +33,7 @@
     .footer {
         flex-direction: row-reverse;
         justify-content: center;
+        align-items: flex-start;
         gap: 135px;
         padding: 30px;
 
@@ -47,11 +48,19 @@
         }
 
         &__copy {
-            align-items: start;
+            align-items: flex-start;
         }
 
-
-
-
     }
+}
+
+@media (min-width: 1280px) {
+    .footer {
+        gap: 300px;
+
+        &__links {
+            gap: 300px;
+        }
+    }
+
 }
