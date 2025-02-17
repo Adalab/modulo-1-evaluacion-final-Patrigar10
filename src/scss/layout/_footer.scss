@@ -1,7 +1,7 @@
 @use '../core/variables' as vars;
 
 .footer {
-    background-color: vars.$grey-color;
+    background-color: vars.$grey-1;
     color: vars.$white;
     display: flex;
     flex-direction: column;
