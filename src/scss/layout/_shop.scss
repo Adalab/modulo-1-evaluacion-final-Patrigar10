@@ -29,6 +29,7 @@
     }
 
     &__link {
+        display: inline-block;
         color: vars.$main-green;
         font-family: vars.$main-font;
         font-weight: 500;
@@ -37,7 +38,18 @@
         border-radius: 40px;
         padding-block: 8px;
         padding-inline: 40px;
+        background-color: white;
+        transition: transform 0.3s ease-in, background-color 0.3s ease-in;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: vars.$light-green;
+
+        }
     }
+
+
+
 }
 
 

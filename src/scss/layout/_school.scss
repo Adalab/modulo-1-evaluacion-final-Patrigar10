@@ -39,6 +39,7 @@
         margin-bottom: -25px;
 
         &__link {
+            display: inline-block;
             background-color: vars.$main-green;
             border-radius: 30px;
             color: vars.$white;
@@ -47,6 +48,13 @@
             font-size: 1.3rem;
             padding-block: 15px;
             padding-inline: 25px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: vars.$grey-1;
+            }
+
         }
     }
 
