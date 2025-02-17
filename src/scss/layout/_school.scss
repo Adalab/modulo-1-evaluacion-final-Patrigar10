@@ -71,11 +71,24 @@
         left: 50%;
         transform: translate(-50%);
         bottom: -22px;
+        animation: saltar 1s linear infinite;
 
     }
 
-}
+    @keyframes saltar {
+        0% {
+            transform: translateY(0);
+        }
 
+        50% {
+            transform: translateY(-5px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
 
 @media (min-width: 768px) {
 
@@ -99,6 +112,5 @@
     .school__articlesbox {
         gap: 22%;
         padding-inline: 19%;
-
     }
 }
