@@ -3,7 +3,7 @@
 
 .menu {
     background-color: vars.$main-green;
-    width: 45px;
+    width: 40px;
     padding: 12px;
     position: fixed;
     left: 0;
@@ -61,6 +61,8 @@
         background-position: 65% 35%;
 
         &__box {
+            padding-bottom: 40px;
+
             &__title {
                 font-size: 4rem;
                 line-height: 5rem;
